@@ -41,7 +41,6 @@ router.get("/logout", logout);
 // Apply the inputValidator middleware to the "/symbol" route
 router.post(
   "/symbol",
-  express.urlencoded({ extended: false }),
   inputValidator,
   symbol
 );
